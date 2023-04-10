@@ -6,6 +6,6 @@ public class ButtonInteraction : MonoBehaviour
 {
    public void ButtonOnClick()
     {
-        Debug.Log("Button 1 pressedl");
+        
     }
 }
