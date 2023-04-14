@@ -1211,6 +1211,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_OpenWorlds
       objectReference: {fileID: 0}
+    - target: {fileID: 3353666616921926523, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1029858777}
+    - target: {fileID: 3353666616921926523, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnEnterButtonClicked_Outdoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666616921926523, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RoomManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3353666617062148214, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
       propertyPath: m_textAlignment
       value: 65535
@@ -1234,6 +1246,18 @@ PrefabInstance:
     - target: {fileID: 3353666617184783469, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666617230840614, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1029858777}
+    - target: {fileID: 3353666617230840614, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnEnterButtonClicked_School
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666617230840614, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RoomManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3353666617505628842, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
       propertyPath: m_textAlignment
@@ -1283,6 +1307,22 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3353666618151478680, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666618151478680, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666618151478680, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666618151478680, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3353666618156345472, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
       propertyPath: m_textAlignment
       value: 65535
@@ -1294,6 +1334,22 @@ PrefabInstance:
     - target: {fileID: 3353666618156345472, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666618244272508, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666618244272508, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666618244272508, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353666618244272508, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb697cc1589d9e645be147f331a8f98f, type: 3}
