@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using TMPro;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
     private string mapType;
 
+    public TextMeshProUGUI OccupancyRateText_ForSchoolRoom;
+    public TextMeshProUGUI OccupancyRateText_ForOutdoorRoom;
+
     // Start is called before the first frame update
     void Start()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
+        if (PhotonNetwork.IsConnectedAndReady)
+        {
+            PhotonNetwork.JoinLobby();
+        }
     }
 
     // Update is called once per frame
@@ -85,6 +93,34 @@ public class RoomManager : MonoBehaviourPunCallbacks
         Debug.Log(newPlayer.NickName+ " joined to: " + "player count: " + PhotonNetwork.CurrentRoom.PlayerCount);
     }
 
+    public override void OnRoomListUpdate(List<RoomInfo> roomList)
+    {
+        if (roomList.Count == 0)
+        {
+            OccupancyRateText_ForSchoolRoom.text = 0 + " / " + 20;
+            OccupancyRateText_ForOutdoorRoom.text = 0 + " / " + 20;            
+        }
+        foreach (RoomInfo room in roomList)
+        {
+            Debug.Log(room.Name);
+            if (room.Name.Contains(MultiplayerVRConstants.MAP_TYPE_VALUE_OUTDOOR))
+            {
+                Debug.Log("Room is a Outdoor map. Player count is: " + room.PlayerCount);
+                OccupancyRateText_ForOutdoorRoom.text = room.PlayerCount + " / " + 20;
+            }            
+            else if (room.Name.Contains(MultiplayerVRConstants.MAP_TYPE_VALUE_SCHOOL))
+            {
+                Debug.Log("Room is a School map. Player count is: " + room.PlayerCount);
+                OccupancyRateText_ForOutdoorRoom.text = room.PlayerCount + " / " + 20;
+            }
+        }
+        
+    }
+    public override void OnJoinedLobby()
+    {
+        Debug.Log("Joined to the lobby");
+    }
+
     #endregion
 
     #region Private Methods
@@ -92,7 +128,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     private void CreateAndJoinRoom()
     {
 
-        string randomRoomName = "Room_" + Random.Range(0, 1000);
+        string randomRoomName = "Room_" + mapType + Random.Range(0, 1000);
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 5;
 

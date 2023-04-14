@@ -13,11 +13,7 @@ public class RoomManagerEditorScript : Editor
         EditorGUILayout.HelpBox("This script is responsible for connecting to Random Room", MessageType.Info);
 
         
-        RoomManager roomManager = (RoomManager)target;
-        if (GUILayout.Button("Join Random Room"))
-        {
-            roomManager.JoinRandomRoom();
-        }
+        RoomManager roomManager = (RoomManager)target;      
 
         if (GUILayout.Button("Join School Room"))
         {
