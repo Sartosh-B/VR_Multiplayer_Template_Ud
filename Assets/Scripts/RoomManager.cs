@@ -111,7 +111,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
             else if (room.Name.Contains(MultiplayerVRConstants.MAP_TYPE_VALUE_SCHOOL))
             {
                 Debug.Log("Room is a School map. Player count is: " + room.PlayerCount);
-                OccupancyRateText_ForOutdoorRoom.text = room.PlayerCount + " / " + 20;
+                OccupancyRateText_ForSchoolRoom.text = room.PlayerCount + " / " + 20;
             }
         }
         
