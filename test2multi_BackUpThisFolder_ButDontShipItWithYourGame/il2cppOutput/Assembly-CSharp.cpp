@@ -9502,8 +9502,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerNetworkSetup_Start_m5D91C5DFCCA0A4
 		// SetLayerRecursively(avatarHeadGameobject, 6);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___avatarHeadGameobject_6;
 		PlayerNetworkSetup_SetLayerRecursively_m3BFCC3138678A8C77B3C82B81EC2DDC1E67E4975(__this, L_4, 6, NULL);
-		// SetLayerRecursively(avatarHeadGameobject, 7);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___avatarHeadGameobject_6;
+		// SetLayerRecursively(avatarBodyGameobject, 7);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___avatarBodyGameobject_7;
 		PlayerNetworkSetup_SetLayerRecursively_m3BFCC3138678A8C77B3C82B81EC2DDC1E67E4975(__this, L_5, 7, NULL);
 		goto IL_0068;
 	}
@@ -9517,8 +9517,8 @@ IL_003d:
 		// SetLayerRecursively(avatarHeadGameobject, 0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___avatarHeadGameobject_6;
 		PlayerNetworkSetup_SetLayerRecursively_m3BFCC3138678A8C77B3C82B81EC2DDC1E67E4975(__this, L_7, 0, NULL);
-		// SetLayerRecursively(avatarHeadGameobject, 0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___avatarHeadGameobject_6;
+		// SetLayerRecursively(avatarBodyGameobject, 0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___avatarBodyGameobject_7;
 		PlayerNetworkSetup_SetLayerRecursively_m3BFCC3138678A8C77B3C82B81EC2DDC1E67E4975(__this, L_8, 0, NULL);
 	}
 
@@ -10201,8 +10201,8 @@ IL_00ea_1:
 				L_37 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralDFD8143E019E080DF5D306ACF4B4AB8604F9759D, L_36, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_37, NULL);
-				// OccupancyRateText_ForOutdoorRoom.text = room.PlayerCount + " / " + 20;
-				TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_38 = __this->___OccupancyRateText_ForOutdoorRoom_7;
+				// OccupancyRateText_ForSchoolRoom.text = room.PlayerCount + " / " + 20;
+				TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_38 = __this->___OccupancyRateText_ForSchoolRoom_6;
 				RoomInfo_t4C5919F4F2B1DCDEA81D1522AFD5008072A7D29D* L_39 = V_3;
 				NullCheck(L_39);
 				int32_t L_40;
